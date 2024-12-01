@@ -1,0 +1,79 @@
+[{
+	"layer": "top",
+	"position": "top",
+	"modules-left": ["hyprland/workspaces" ],
+	"modules-center": [],
+	"modules-right": ["network", "pulseaudio", "cpu", "memory", "battery", "clock"],
+   "hyprland/workspaces": {
+      "format": "{name}",
+      "format-icons": {
+         "active": "",
+         "default": "",
+         "persistent": ""
+      },
+		"disable-scroll": true,
+		"all-outputs": true,
+		"on-click": "activate"
+	},
+	"pulseaudio": {
+		"tooltip": false,
+		"scroll-step": 5,
+		"format": "{icon} {volume}%",
+		"format-icons": {
+			"default": ["奄", "奔", "墳"]
+		}
+	},
+	"network": {
+		"tooltip": false,
+		"interval":1,
+		"format-wifi": " {essid} {ipaddr} :{bandwidthDownBytes} :{bandwidthUpBytes}",
+		"format-ethernet": " {ipaddr} :{bandwidthDownBytes} :{bandwidthUpBytes}"
+	},
+	"cpu": {
+		"interval": 1,
+		"format": "{icon0}{icon1}{icon2}{icon3}{icon4}{icon5}{icon6}{icon7} {usage:>2}% ",
+		"format-icons": ["▁", "▂", "▃", "▄", "▅", "▆", "▇", "█"]
+	},
+	"memory": {
+		"tooltip": false,
+		"format": " {}%"
+	},
+	"clock": {
+		"format": "{: %R   %d/%m}",
+		"format-alt": "{%d/%m}"
+	},
+	"battery": {
+		"states": {
+			"good": 75,
+			"medium": 50,
+			"warning": 30,
+			"critical": 15
+		},
+		"format": "{capacity}% {icon}",
+		"format-charging": "{capacity}% ",
+		"format-plugged": "{capacity}% ",
+		"format-plugged-full": "",
+		"format-alt": "{time} {icon}",
+		"format-icons": ["", "", "", "", ""]
+	}
+},
+{
+	"layer": "top",
+	"position": "bottom",
+	"modules-left": [],
+	"modules-center": ["wlr/taskbar"],
+	"modules-right": [],
+	"wlr/taskbar": {
+		"format": "{icon}",
+		"icon-size": 24,
+		"icon-theme": "Papirus",
+		"tooltip-format": "{title}:{app_id}",
+		"on-click": "activate",
+		"on-click-middle": "close",
+		"app_ids-mapping": {
+			"firefoxdeveloperedition": "firefox-developer-edition",
+			"Spotify": "spotify-client"
+		}
+	}
+}]
+
