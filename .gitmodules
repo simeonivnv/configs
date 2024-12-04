@@ -1,3 +1,6 @@
 [submodule "nvim"]
 	path = nvim
 	url = git@github.com:simeonivnv/kickstart.nvim.git
+[submodule "zsh/ohmyzsh"]
+	path = zsh/ohmyzsh
+	url = git@github.com:simeonivnv/ohmyzsh.git
