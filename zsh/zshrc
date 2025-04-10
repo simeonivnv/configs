@@ -175,3 +175,7 @@ if [ -f ~/.profile ]; then
 fi
 
 eval "$(starship init zsh)"
+
+source /home/isimeon/dev/git/fzf-git.sh/fzf-git.sh
+
+. "$HOME/.local/bin/env"
